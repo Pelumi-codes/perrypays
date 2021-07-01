@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Trial 3 Perrypays</title>
+    <script
+      src="https://kit.fontawesome.com/0d48b0b0af.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+     <!-- animsition css -->
+     <!-- <link rel="stylesheet" type="text/css" href="css/animsition.min.css"> -->
+    <!-- Font Awesome CSS -->
+    <!-- <link href="css/font-awesome.min.css" rel="stylesheet" /> -->
+    <!-- font css -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> -->
+    <!-- owl Carousel Css -->
+    <!-- <link href="css/owl.carousel.css" rel="stylesheet"> -->
+    <!-- <link href="css/owl.theme.css" rel="stylesheet"> -->
+    <!-- Theme Css -->
+    <!-- <link rel="stylesheet" href="css/theme.css">  -->
+  </head>
+  <body>
+    <div id="sticky-wrapper" class="sticky-wrapper" style="height: 124px;"><div class="header" style="width: 1201px;">
+        <div class="container-header">
+            <div class="row-header">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 logo">
+                    <h3 class="logo">PerryPays</h3>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div id="nav" class="nav">
+                        <ul class="pull-right">
+                            <li class="active"><a href="index.html" title="Home">Home</a></li>
+                            <li><a href="#" title="About">About</a></li>
+                            <li><a href="#" title="Testimonials">Testimonials</a></li>
+                            <li><a href="#" title="Contact">Contact</a></li>
+                            <li><a href="login.html" id="login" class="btn btn-info">Login</a></li>
+                            <li>
+                                <a href="sign-up.html" title="Create Account">Create Account</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="row-two">
+                <div class="col-lg-8 col-md-8 col-sm-12 hidden-xs">
+                  <div class="intro-caption">
+                    <h1 class="intro-title">
+                      Cryptocurrency Sells <br />
+                      Never been easier.
+                    </h1> <br>
+                    <p class="medium">
+                      Sell your Bitcoins with velocity!<br />
+                      From your home, with the security and speed.
+                    </p><br>
+                    <a href="sign-up.html" class="btn btn-info " id="btn">Get Started</a>
+                    <a href="login.html" class="btn btn-danger" id ="btn1">Login</a>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="container mb-5 mt-5">
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <br>
+          <br>
+          <h1>Exchange rates</h1>
+          <div class="row mb-1">
+            <div class="col-md-6">
+              <p>N450</p>
+              <p>Naira Buy Rate</p>
+            </div>
+            <div class="col-md-6">
+              <p>$1</p>
+              <p>USD</p>
+            </div>
+          </div>
+          <table class="table table-striped table-info">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Coin</th>
+                <th scope="col">USD</th>
+                <th scope="col">NGN</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>BTC</td>
+                <td id="usd_btc">0.00</td>
+                <td id="ngn_btc">0.00</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>ETH</td>
+                <td id="usd_eth">0.00</td>
+                <td id="ngn_eth">0.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-6 pl-5">
+          <br>
+          <br>
+          <h1>Exchange rates calculator</h1>
+          <hr />
+          <form name="form" id="coin-form" method="post">
+            <div class="row">
+              <div class="col-md-6">
+                <p>Coin</p>
+                <select name="coin-options" id="coin-options" class="mb-2">
+                  <option value="USD">USD</option>
+                  <option value="NGN">NGN</option>
+                </select>
+                <br />
+                <br />
+                <p>Bitcoin</p>
+                <input
+                  type="number"
+                  name=""
+                  id="coin-btc"
+                  placeholder="0"
+                  disabled
+                />
+              </div>
+              <div class="col-md-6">
+                <p>Amount</p>
+                <input
+                  type="number"
+                  name="amount"
+                  id="coin-amount"
+                  value="0"
+                  placeholder="Coin amount"
+                />
+
+                <br />
+                <br />
+                <p>Ethereum</p>
+                <input
+                  type="number"
+                  name=""
+                  id="coin-eth"
+                  placeholder="0"
+                  disabled
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <div class="container" id="about">
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="bitcoin receipt.png" width="500" height="500" alt="" />
+        </div>
+        <div class="col-lg-6">
+          <h1>
+            Crafted For Secured, and <br />
+            Reliable Transactions.
+          </h1>
+          <p>
+            Perry Pays provides a Bitcoin marketplace where people sell Bitcoin
+            <br />
+            easily and safely with notable simple UI, friendly online customer
+            <br />
+            support 24/7 and lowest fee compared with major players on the
+            <br />
+            market.
+          </p>
+          <p>
+            Our team is comprised mostly by banking professionals with extensive
+            experience in financial products, E-currencies, Payment System and
+            <br />
+            Agile Software Development, and others.
+          </p>
+          <button type="submit" class="btn btn-info">Create Account</button>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="text-center">
+            <br /><br />
+            <h1><i class="fa fa-laptop" aria-hidden="true"></i></h1>
+            <h3>Secured</h3>
+            <p>
+              All your transactions are 100% secure. <br />
+              Encrypted connections and easy <br />
+              payment methods.
+            </p>
+            <br /><br /><br />
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="text-center">
+            <br /><br />
+            <h1><i class="fa fa-clock-o" aria-hidden="true"></i></h1>
+            <h3>Fast</h3>
+            <p>
+              Completely fluid experience. The <br />
+              operation will be performed instantly.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="text-center">
+            <br /><br />
+            <h1><i class="fa fa-columns" aria-hidden="true"></i></h1>
+            <h3>Simplicity</h3>
+            <p>
+              In just three steps you will be able to <br />
+              sell bitcoin 24/7 using our simple <br />
+              interface.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- overview-->
+    <div class="cta">
+      <div class="container-body py-1 pb-5">
+        <br /><br /><br />
+        <h1 class="text-center">100% secure transactions</h1>
+        <p class="text-center cta-text">
+          We buy Bitcoins at the very best market prices because we wanna make
+          you(our customer) rich. <br />
+          We got Velocity in our DNA. You will testify on 1st trial or walk
+          away! <br />
+          More than 10k+ Transactions
+        </p>
+        <div class="row px-5">
+          <div class="col-lg-4 text-center">
+            <h2 class="section-title">158</h2>
+            <p class="cta-text">Clients</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h2 class="section-title">2.6K+</h2>
+            <p class="cta-text">Digital currency exchanged</p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <h2 class="section-title">44.2K+</h2>
+            <p class="cta-text">Transactions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section bg-light">
+      <!--About  -->
+      <div class="container">
+        <div class="row">
+          <br>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mb60">
+           <br><br>
+            <h1>Who We Are?</h1>
+            <p>
+              Perry Pays provides a Bitcoin marketplace where people sell
+              Bitcoin easily and safely with notable simple UI, friendly online
+              customer support 24/7 and lowest fee compared with major players
+              on the market. Our team is comprised mostly by banking
+              professionals with extensive experience in financial products,
+              E-currencies, Payment System and Agile Software Development, and
+              others.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mb40">
+            <h2>Take on the market with our powerful platforms</h2>
+          </div>
+          <br>
+          <br>
+          <div class="col-md-4">
+            <div class="multiple mb30 py-4 mx-4 who">
+              <h3>Multiple Brokage Options</h3>
+              <p>
+                By having multiple brokerage accounts, you can take advantage of
+                the strengths of each broker, mixing and matching the qualities
+                that you find valuable. And that should save you money and offer
+                a better overall product and experience.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="convenience mb30 py-4 mx-4 who">
+              <h3>Convenience</h3>
+              <p>
+                Trade from the comfort of your home. Have the feel of
+                comfortability and flexibility.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="Expert mb30 py-4 mx-4 who">
+              <h3>Expert Research Recommendations</h3>
+              <p>
+                Leading experts in crypto currencies such as Elon Musk
+                recommends Perry Pays.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center mt40">
+            <button class="btn btn-info" id="about">About us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <!-- Reviews -->
+    <div class="section-space60" >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="section-title">
+              <h1>Customer Reviews</h1>
+              <p>
+                We welcome feedback from our members as it helps us optimize the
+                site to better service their needs.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row-review">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="test">
+            <div class="outline testimonial-block pinside30 mb30">
+              <div class="testimonial-header">
+                <div class="testimonial-icon">
+                  <!-- testimonial icon -->
+                  <i class="fa fa-quote-left"></i>
+                </div>
+                <!-- /.testimonial icon -->
+                <span class="testimonial-title">Good Service</span>
+              </div>
+              <div class="testimonial-content">
+                <p>
+                  “I have only been with the stock pick system and short time
+                  and so for have had very good results. 34 trades with only one
+                  loss and that amount was only 1.35%”
+                </p>
+              </div>
+              <div class="customer-box">
+                <!-- customer-box -->
+                <div class="testimonial-img">
+                  <img src="jose.jpg" alt=" " class="img-c" height="80px" />
+                </div>
+                <div class="testimonial-info">
+                  <h3 class="customer-name">Jose Chronister</h3>
+                  <h4 class="testimonial-meta">customer</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="test2">
+            <div class="outline testimonial-block pinside30 mb30">
+              <div class="testimonial-header">
+                <div class="testimonial-icon">
+                  <!-- testimonial icon -->
+                  <i class="fa fa-quote-left"></i>
+                </div>
+                <!-- /.testimonial icon -->
+                <span class="testimonial-title">Great Discovery</span>
+              </div>
+              <div class="testimonial-content">
+                <p>
+                  “What a great discovery. This is what I have been looking for.
+                  I don’t want to Daytrade. On the other hand, I do not want to
+                  sit on it for a long time before I sell”
+                </p>
+              </div>
+              <div class="customer-box">
+                <!-- customer-box -->
+                <div class="testimonial-img">
+                  <img src="lisa.jpg" alt=" " class="img-c" height="80px" />
+                </div>
+                <div class="testimonial-info">
+                  <h3 class="customer-name">Lisa Greene</h3>
+                  <h4 class="testimonial-meta">customer</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12" id="test1">
+            <div class="outline testimonial-block pinside30 mb30">
+              <div class="testimonial-header">
+                <div class="testimonial-icon">
+                  <!-- testimonial icon -->
+                  <i class="fa fa-quote-left"></i>
+                </div>
+                <!-- /.testimonial icon -->
+                <span class="testimonial-title">Easy to Follow</span>
+              </div>
+              <div class="testimonial-content">
+                <p>
+                  “After searching for a site with recommendations that make
+                  sense and easy to follow I finally found one. Took about
+                  profit first and I’m just getting into the system”
+                </p>
+              </div>
+              <div class="customer-box">
+                <!-- customer-box -->
+                <div class="testimonial-img">
+                  <img src="images.jpg" alt=" " class="img-c" height="80px" />
+                </div>
+                <div class="testimonial-info">
+                  <h3 class="customer-name">Katheryn Brown</h3>
+                  <h4 class="testimonial-meta">customer</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="cta">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12" id="title">
+            <h1 class="cta-title" >
+              Get in touch <br />
+              Call, email 24/7 or visit a branch
+            </h1>
+            <p class="cta-text">We are always there to help you all the way.</p>
+          </div>
+          <div
+            class="
+              col-lg-offset-1
+              col-lg-4
+              col-md-offset-1
+              col-md-4
+              col-sm-6
+              col-xs-12
+            "
+          >
+            <div class="bg-white pinside30 cta-info"  id="phone">
+              <div class="cta-call">
+                <i class="fa fa-phone"></i>
+                <span class="No">+234 9076352506</span>
+                <br><br>
+              </div>
+              <div class="cta-mail">
+                <i class="fa fa-envelope"></i>
+                <span>Info@payperrys.com</span>
+                <br>
+                <br>
+              </div>
+              <div class="cta-address">
+                <i class="fa fa-map-marker"></i>
+                <span class="address"> Nigeria </span>
+                <br>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-space80" id="contact">
+      <!--  -->
+      <div class="container">
+        <br><br>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="section-title">
+              <h1>Contact Us</h1>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <form method="POST" action="">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail4"
+                    name="email"
+                  />
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputPassword4"
+                    name="fullname"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">Subject</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputSubject"
+                  name="subject"
+                />
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Message</label>
+                <textarea
+                  name="message"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <button type="submit" name="submit" class="btn btn-info" id="contact">
+                Contact Us
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="footer section-space60">
+      <!-- footer -->
+      <div class="container-footer">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+            <div class="footer-widget mb20">
+              <br><br><br>
+              <!-- footer-widget -->
+              <h3 class="footer-title">Contact Info</h3>
+              <div class="ft-contact-info">
+                <!-- ft contact info -->
+                <div class="ft-icon">
+                  <!-- ft icon -->
+                  <i class="fa fa-phone"></i>
+                </div>
+                <!-- /.ft icon -->
+                <div class="ft-content">
+                  <!-- ft content -->
+                  +234 9076352506
+                </div>
+                <!-- /.ft content -->
+              </div>
+              <!-- /.ft contact info -->
+              <div class="ft-contact-info">
+                <!-- ft contact info -->
+                <div class="ft-icon">
+                  <!-- ft icon -->
+                  <i class="fa fa-envelope"></i>
+                </div>
+                <!-- /.ft icon -->
+                <div class="ft-content">
+                  <!-- ft content -->
+                  info@perrypays.com
+                </div>
+                <!-- /.ft content -->
+              </div>
+              <!-- /.ft contact info -->
+              <div class="ft-contact-info">
+                <!-- ft contact info -->
+                <div class="ft-icon">
+                  <!-- ft icon -->
+                  <i class="fa fa-map-marker"></i>
+                </div>
+                <!-- /.ft icon -->
+                <div class="ft-content">
+                  <!-- ft content -->
+                  Nigeria
+                </div>
+                <!-- /.ft content -->
+              </div>
+              <!-- /.ft contact info -->
+            </div>
+            <!-- /.footer-widget -->
+          </div>
+          <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+            <div class="footer-widget mb20">
+              <br><br><br>
+              <!-- footer-widget -->
+              <h3 class="footer-title">Quick Links</h3>
+              <ul class="bullet listnone no-padding mb0">
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="index.html" class="Home" >Home</a>
+                </li>
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="service-list.html" title="Services" class="Home">Services</a>
+                </li>
+                <!-- <li><i class="fa fa-angle-right"></i> <a href="blog.html" title="Blog">Blog</a></li> -->
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="contact-us.html" title="Contact us" class="Home">Contact us</a>
+                </li>
+              </ul>
+              <!-- /.footer-widget -->
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+            <div class="footer-widget mb20">
+              <br><br><br>
+              <!-- footer-widget -->
+              <h3 class="footer-title">Follow Us On</h3>
+              <ul class="listnone no-padding mb0">
+                <li class="footer-link">
+                  <a href="#"><i class="fa fa-facebook-square" id="icon"></i></a><br>
+                </li>
+                <li class="footer-link">
+                  <a href="#"><i class="fa fa-twitter-square" id="icon"></i> </a>
+                </li>
+                <li class="footer-link">
+                  <a href="#"
+                    ><i class="fa fa-google-plus-square" id="icon"></i> </a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- /.footer-widget -->
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="footer-widget">
+              <br><br><br>
+              <!-- footer-widget -->
+              <h3 class="footer-title">Newsletter</h3>
+              <p>Subscribe our email newsletter today to receive updates.</p>
+              <form>
+                <div class="form-group">
+                  <label for="inputEmail3" class="sr-only control-label"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="inputEmail3"
+                    placeholder="Enter Email Address"
+                  />
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-outline">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- /.footer-widget -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tiny-footer">
+      <!-- tiny-footer -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p>Copyrights © 2021. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

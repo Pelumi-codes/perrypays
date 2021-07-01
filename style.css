@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kanit", sans-serif;
+  margin: 0;
+  width: 100%;
+  background-color: rgb(240, 243, 245);
+}
+.container-header {
+  background-image: linear-gradient(rgba(0, 0, 0, -0.1), rgba(0, 0, 0, -0.7)),
+    url(https://wallpapercave.com/wp/wp3624615.jpg);
+  /* background-color: "bitcoin.jpg"; */
+  /* width:100%; */
+  position: relative;
+  float: left;
+  color: white;
+  width: 150%;
+  height: 850px;
+}
+.logo {
+  font-family: "kanit", sans-serif;
+  text-align: justify;
+  font-size: 48px;
+  text-shadow: 5px 5px rgba(92, 168, 240, 0.555);
+  margin: 0px 0px 0px 100px;
+  /* color:goldenrod; */
+}
+
+.nav {
+  margin: auto;
+}
+li {
+  list-style-type: none;
+  float: left;
+  letter-spacing: 2px;
+  margin: auto;
+  padding: 0 10px;
+  position:sticky;
+}
+a {
+  color: white;
+  font-size: 20px;
+  margin: auto;
+  
+}
+.row-header {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+#login {
+  padding: 10px;
+  border-radius: 25px;
+}
+.row-two {
+  text-align: justify;
+  margin: 0px 0px 0px 180px;
+}
+.intro-title {
+  font-size: 68px;
+}
+.medium {
+  font-size: 24px;
+}
+#btn {
+  padding: 15px 35px;
+  margin-right: 20px;
+  border-radius: 25px;
+}
+#btn1 {
+  padding: 15px 35px;
+  border-radius: 25px;
+}
+.container-body {
+  background-color: rgb(124, 191, 236);
+  height: 400px;
+}
+#about {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.multiple {
+  border-bottom: 2px solid rgb(124, 191, 236);
+  border-top: 2px solid rgb(124, 191, 236);
+  border-left: 2px solid rgb(124, 191, 236);
+  border-right: 2px solid rgb(124, 191, 236);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.convenience {
+  border-bottom: 2px solid rgb(124, 191, 236);
+  border-top: 2px solid rgb(124, 191, 236);
+  border-left: 2px solid rgb(124, 191, 236);
+  border-right: 2px solid rgb(124, 191, 236);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.Expert {
+  border-bottom: 2px solid rgb(124, 191, 236);
+  border-top: 2px solid rgb(124, 191, 236);
+  border-left: 2px solid rgb(124, 191, 236);
+  border-right: 2px solid rgb(124, 191, 236);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+#test {
+  border-bottom: 2px solid rgb(124, 191, 236);
+  border-top: 2px solid rgb(124, 191, 236);
+  border-left: 2px solid rgb(124, 191, 236);
+  border-right: 2px solid rgb(124, 191, 236);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  /* margin: 0 2px;  */
+  font-size: 16px;
+}
+#test1 {
+  border-bottom: 2px solid rgb(124, 191, 236);
+  border-top: 2px solid rgb(124, 191, 236);
+  border-left: 2px solid rgb(124, 191, 236);
+  border-right: 2px solid rgb(124, 191, 236);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  /* margin: 0 2px;  */
+}
+#test2 {
+  border-bottom: 2px solid rgb(124, 191, 236);
+  border-top: 2px solid rgb(124, 191, 236);
+  border-left: 2px solid rgb(124, 191, 236);
+  border-right: 2px solid rgb(124, 191, 236);
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  /* margin: 0 2px;  */
+}
+.section-title {
+  text-align: center;
+  margin: 10px 0;
+}
+.row-review {
+  margin: 0 2px;
+  display: flex;
+  justify-content: space-between;
+}
+.img-c {
+  content: "";
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  bottom: -65px;
+  left: 65px;
+  width: 98px;
+  height: 80px;
+  transform: translate(-40%, -50%);
+}
+.testimonial-info {
+  text-align: right;
+  font-size: 6px;
+}
+.customer-name {
+  font-size: 15px;
+}
+.testimonial-meta {
+  font-size: 12px;
+}
+.testimonial-title {
+  font-size: 28px;
+  color: rgb(124, 191, 236);
+}
+.testimonial-icon {
+  color: rgb(124, 191, 236);
+}
+.testimonial-header {
+  display: flex;
+  letter-spacing: 2px;
+  margin-left: 30px;
+}
+.container-fluid {
+  background-color: rgb(124, 191, 236);
+  display: flex;
+  height: 400px;
+  justify-content: space-around;
+  align-items: center;
+}
+#title {
+  color: white;
+}
+#phone {
+  padding: 50px;
+  color: rgb(124, 191, 236);
+  border-bottom: 2px solid rgb(124, 191, 236);
+  
+}
+.cta-call {
+    margin: 30px 0;
+  border-bottom: 2px solid rgb(98, 99, 99);
+
+}
+.cta-mail {
+    border-bottom: 2px solid rgb(102, 101, 101);
+    margin: 30px 0;
+}
+.form-control {
+  border-radius: 25px;
+  box-shadow: 2px 2px rgb(124, 191, 236);
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: transparent;
+}
+#contact {
+  padding: 10px 30px;
+  border-radius: 25px;
+  margin: 10px 0;
+}
+.container-footer {
+  background-color: rgb(1, 10, 15);
+  height: 300px;
+  margin-top: 30px;
+  color: rgb(133, 125, 125);
+  text-align: center;
+}
+
+.footer-title {
+  color: rgb(124, 191, 236);
+  margin-bottom: 40px;
+}
+.ft-contact-info {
+  display: flex;
+  margin-left: 100px;
+  padding: 0 30px 10px 10px; 
+  border-bottom: 1px solid rgb(46, 45, 45);
+}
+.Home{
+    color:rgb(133, 125, 125);
+    padding: 20px 0;
+}
+#icon{
+    color:rgb(133, 125, 125); 
+    margin-left: 50px;
+}
